@@ -1,0 +1,52 @@
+# -*- mode: python ; coding: utf-8 -*-
+
+
+a = Analysis(
+    ['DevOps-Suite/src/main.py'],
+    pathex=['c:\\Users\\acer\\OneDrive\\Escritorio\\2025\\2025-2\\Calidad\\Proyecto 2 unidad'],
+    binaries=[],
+    datas=[('DevOps-Suite/ui', 'ui'),
+           ('DevOps-Suite/src/automation', 'automation'),
+           ('DevOps-Suite/src/cloud_deployment', 'cloud_deployment'),
+           ('DevOps-Suite/src/code_generator', 'code_generator'),
+           ('DevOps-Suite/src/data_converter', 'data_converter'),
+           ('DevOps-Suite/src/developer_utils', 'developer_utils'),
+           ('DevOps-Suite/src/hardware_calculator', 'hardware_calculator'),
+           ('DevOps-Suite/src/infrastructure', 'infrastructure'),
+           ('DevOps-Suite/src/monitoring', 'monitoring'),
+           ('DevOps-Suite/src/network_simulator', 'network_simulator'),
+           ('DevOps-Suite/src/plugins', 'plugins'),
+           ('DevOps-Suite/src/reporting', 'reporting'),
+           ('DevOps-Suite/src/syntax_validator', 'syntax_validator'),
+           ('DevOps-Suite/resources', 'resources')],
+    hiddenimports=['psutil', 'fpdf', 'xmltodict', 'dicttoxml', 'PyQt5.sip', 'reportlab', 'reportlab.platypus', 'reportlab.lib.styles', 'reportlab.lib.colors', 'reportlab.lib.units'],
+    hookspath=[],
+    hooksconfig={},
+    runtime_hooks=[],
+    excludes=[],
+    noarchive=False,
+    optimize=0,
+)
+pyz = PYZ(a.pure)
+
+exe = EXE(
+    pyz,
+    a.scripts,
+    a.binaries,
+    a.datas,
+    [],
+    name='main',
+    debug=False,
+    bootloader_ignore_signals=False,
+    strip=False,
+    upx=True,
+    upx_exclude=[],
+    runtime_tmpdir=None,
+    console=False,
+    disable_windowed_traceback=False,
+    argv_emulation=False,
+    target_arch=None,
+    codesign_identity=None,
+    entitlements_file=None,
+    icon='c:\\Users\\acer\\OneDrive\\Escritorio\\2025\\2025-2\\Calidad\\Proyecto 2 unidad\\DevOps-Suite\\resources\\logo.png',
+)
