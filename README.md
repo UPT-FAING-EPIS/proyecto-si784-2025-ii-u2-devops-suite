@@ -19,3 +19,6 @@ Esta es una aplicación simple de gestión de casos de prueba construida con Pyt
 5.  **Ejecutar un caso de prueba**: Selecciona un caso de prueba de la tabla y haz clic en el botón "Ejecutar Prueba".
 6.  **Generar un informe**: Haz clic en el botón "Generar Informe" para ver un resumen de los resultados de las pruebas.
 7.  **Exportar un informe**: Después de generar un informe, se te pedirá que lo exportes a PDF o Excel.
+
+
+## Prueba de Commit
